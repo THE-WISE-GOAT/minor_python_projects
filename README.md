@@ -8,11 +8,11 @@ A centralized showcase of self-contained Python applications exploring discrete 
 
 This repository functions as an integrated portfolio. Every simulation is fully modularized into its own directory alongside a dedicated technical brief:
 
-* **[`/computer-vision-blink-trigger`](./computer-vision-blink-trigger)**: MediaPipe-driven gesture tracking interface. Handles real-time spatial coordinate evaluation.
-* **[`/elevator-dispatch-system`](./elevator-dispatch-system)**: Pygame-driven multi-car dispatch logic engine. Explores scheduling optimization and transit state-machines.
-* **[`/traffic-intersection-flow`](./traffic-intersection-flow)**: Fixed-phase balanced traffic grid coordinator. Implements relative-distance collision avoidance logic.
-* **[`/fluid-reservoir-control`](./fluid-reservoir-control)**: Automated dual-threshold pump feedback model simulating environmental inflows against mechanical discharge thresholds.
-* **[`/ball-trajectory-kinematics`](./ball-trajectory-kinematics)**: Explicit time-stepped trajectory physics generator with automatic Excel reporting profiles.
+* **[`/blink key press`](./blink key press)**: MediaPipe-driven gesture tracking interface. Handles real-time spatial coordinate evaluation.
+* **[`/elevator simulation`](./elevator simulation)**: Pygame-driven multi-car dispatch logic engine. Explores scheduling optimization and transit state-machines.
+* **[`/traffic simulation`](./traffic simulation)**: Fixed-phase balanced traffic grid coordinator. Implements relative-distance collision avoidance logic.
+* **[`/water tank simulation`](./water tank simulation)**: Automated dual-threshold pump feedback model simulating environmental inflows against mechanical discharge thresholds.
+* **[`/ball-bounce simulation`](./ball-bounce simulation)**: Explicit time-stepped trajectory physics generator with automatic Excel reporting profiles.
 
 ---
 
@@ -25,18 +25,17 @@ This repository functions as an integrated portfolio. Every simulation is fully 
 ### Installation & Initialization
 1. Clone the workspace layout:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/python-simulations-portfolio.git](https://github.com/YOUR_USERNAME/python-simulations-portfolio.git)
-   cd python-simulations-portfolio
+   git clone [link of repo]
    
 2. Establish and initialize an isolated local virtual environment:
 
-    ```bash
+```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install all cross-project external dependencies at once:
 
-    ```bash
+```bash
 pip install -r requirements.txt
 
 💡 Maintained as an ongoing engineering exploration into programmatic simulations, real-time feedback loops, and interactive UI systems.
