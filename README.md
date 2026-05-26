@@ -8,11 +8,11 @@ A centralized showcase of self-contained Python applications exploring discrete 
 
 This repository functions as an integrated portfolio. Every simulation is fully modularized into its own directory alongside a dedicated technical brief:
 
-* **[`/blink key press`](./blink key press)**: MediaPipe-driven gesture tracking interface. Handles real-time spatial coordinate evaluation.
-* **[`/elevator simulation`](./elevator simulation)**: Pygame-driven multi-car dispatch logic engine. Explores scheduling optimization and transit state-machines.
-* **[`/traffic simulation`](./traffic simulation)**: Fixed-phase balanced traffic grid coordinator. Implements relative-distance collision avoidance logic.
-* **[`/water tank simulation`](./water tank simulation)**: Automated dual-threshold pump feedback model simulating environmental inflows against mechanical discharge thresholds.
-* **[`/ball-bounce simulation`](./ball-bounce simulation)**: Explicit time-stepped trajectory physics generator with automatic Excel reporting profiles.
+* **[`/blink_key_press`](./blink_key_press)**: MediaPipe-driven gesture tracking interface. Handles real-time spatial coordinate evaluation.
+* **[`/elevator_simulation`](./elevator_simulation)**: Pygame-driven multi-car dispatch logic engine. Explores scheduling optimization and transit state-machines.
+* **[`/traffic_simulation`](./traffic_simulation)**: Fixed-phase balanced traffic grid coordinator. Implements relative-distance collision avoidance logic.
+* **[`/water_tank_simulation`](./water_tank_simulation)**: Automated dual-threshold pump feedback model simulating environmental inflows against mechanical discharge thresholds.
+* **[`/ball-bounce_simulation`](./ball-bounce_simulation)**: Explicit time-stepped trajectory physics generator with automatic Excel reporting profiles.
 
 ---
 
