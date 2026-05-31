@@ -1,41 +1,78 @@
-# Interactive Python Simulations & Algorithmic Engines Portfolio
+# Interactive Python Simulations & Small Utilities
 
-A centralized showcase of self-contained Python applications exploring discrete state-machine design, automated feedback loops, kinematic modeling, and real-time computer vision tracking interfaces.
-
----
-
-## 📂 Repository Architecture
-
-This repository functions as an integrated portfolio. Every simulation is fully modularized into its own directory alongside a dedicated technical brief:
-
-* **[`/blink_key_press`](./blink_key_press)**: MediaPipe-driven gesture tracking interface. Handles real-time spatial coordinate evaluation.
-* **[`/elevator_simulation`](./elevator_simulation)**: Pygame-driven multi-car dispatch logic engine. Explores scheduling optimization and transit state-machines.
-* **[`/traffic_simulation`](./traffic_simulation)**: Fixed-phase balanced traffic grid coordinator. Implements relative-distance collision avoidance logic.
-* **[`/water_tank_simulation`](./water_tank_simulation)**: Automated dual-threshold pump feedback model simulating environmental inflows against mechanical discharge thresholds.
-* **[`/ball-bounce_simulation`](./ball-bounce_simulation)**: Explicit time-stepped trajectory physics generator with automatic Excel reporting profiles.
+This repository is a collection of compact, self-contained Python projects demonstrating simulation techniques, simple controllers, and lightweight computer-vision utilities.
 
 ---
 
-## 🛠️ Environment Setup
+## Projects
+
+Each project lives in its own folder with a short technical brief and a runnable script. To run a project, open a terminal in the project's directory and run the command shown.
+
+- **[`/blink_key_press`](./blink_key_press)** — Eye-Blink Event Keypress Controller: uses MediaPipe Face Mesh to detect deliberate eye blinks and emit local keystrokes. Run:
+
+   ```bash
+   python blink_to_key.py
+   ```
+
+- **[`/hand_sign_screenlock`](./hand_sign_screenlock)** — Hand-gesture Screen Lock: uses MediaPipe Hands + OpenCV to detect a closed fist and lock the host screen (cross-platform helpers). Run:
+
+   ```bash
+   python hand_lock.py
+   ```
+
+- **[`/elevator_simulation`](./elevator_simulation)** — Multi-Elevator Dispatch Logic Simulation: Pygame visual workbench modeling multi-car dispatch heuristics and state-machine behaviors. Run:
+
+   ```bash
+   python elevator.py
+   ```
+
+- **[`/traffic_simulation`](./traffic_simulation)** — Balanced Traffic Intersection Simulator: 2D vehicle routing with signal phases and proximity-based avoidance. Run:
+
+   ```bash
+   python traffic.py
+   ```
+
+- **[`/water_tank_simulation`](./water_tank_simulation)** — Smart Fluid Reservoir Feedback Model: dual-threshold automated pump controller simulation. Run:
+
+   ```bash
+   python water.py
+   ```
+
+- **[`/ball-bounce_simulation`](./ball-bounce_simulation)** — Kinematic Trajectory & Attenuation Engine: time-stepped physics simulation that logs trajectories to an Excel file. Run:
+
+   ```bash
+   python bounce.py
+   ```
+
+---
+
+## Setup
 
 ### Prerequisites
-* Python 3.10 or higher
-* An active webcam assembly (required exclusively for the Computer Vision module)
+- Python 3.10 or newer
+- A webcam is required for the computer-vision utilities (`blink_key_press` and `hand_sign_screenlock`).
 
-### Installation & Initialization
-1. Clone the workspace layout:
-   ```bash
-   git clone [link of repo]
-   
-2. Establish and initialize an isolated local virtual environment:
+### Install
+1. Create and activate a virtual environment:
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
+```
 
-3. Install all cross-project external dependencies at once:
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
-💡 Maintained as an ongoing engineering exploration into programmatic simulations, real-time feedback loops, and interactive UI systems.
+Notes
+- If you only want to run non-CV projects (Pygame / numeric sims), OpenCV and MediaPipe are optional.
+- The `hand_sign_screenlock` attempts platform-specific lock commands; depending on your OS you may need elevated permissions or minor adjustments.
+
+---
+
+If you'd like, I can also:
+- add missing `readme.md` for `hand_sign_screenlock`,
+- generate short usage examples per project, or
+- run a quick smoke test for one of the scripts.
